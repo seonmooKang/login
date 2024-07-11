@@ -1,2 +1,8 @@
-package social.login.repository;public interface MemberRepository {
+package social.login.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import social.login.entity.MemberEntity;
+
+public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
+
 }

@@ -1,2 +1,15 @@
-package social.login.dto;public class MemberDTO {
+package social.login.dto;
+
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class MemberDTO {
+    private Long id;
+    private String memberEmail;
+    private String memberPassword;
+    private String memberName;
 }
